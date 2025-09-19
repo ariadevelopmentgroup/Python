@@ -1,0 +1,132 @@
+html_content = '''
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <title>Python-ի Ուսումնական Պլան — 3 Ամիս</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .month {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .month-header {
+            padding: 15px;
+            background-color: #e3f2fd;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .weeks {
+            display: none;
+            padding: 15px;
+        }
+        .week {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 4px solid #2196f3;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+        }
+        .week h4 {
+            margin: 0 0 5px 0;
+        }
+        .lesson, .task {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐍 Python-ի Ուսումնական Պլան — 3 Ամիս</h1>
+
+    <div class="month">
+        <div class="month-header" onclick="toggleWeeks(this)">📅 Ամիս 1 — Հիմունքներ</div>
+        <div class="weeks">
+            <div class="week">
+                <h4>Շաբաթ 1–2</h4>
+                <div class="lesson">🎥 Դասեր՝ Ի՞նչ է ծրագրավորումը, Python-ի տեղադրումը, Առաջին ծրագիր</div>
+                <div class="task">📝 Առաջադրանքներ՝<br>
+                    - Տպիր «Բարև աշխարհ»<br>
+                    - Ստեղծիր փոփոխականներ՝ անուն, տարիք, և տպիր դրանք
+                </div>
+            </div>
+            <div class="week">
+                <h4>Շաբաթ 3–4</h4>
+                <div class="lesson">🎥 Դասեր՝ Ցիկլեր, Պայմաններ, Մուտք և ելք</div>
+                <div class="task">📝 Առաջադրանքներ՝<br>
+                    - Տարիքի հարցում և չափահաս լինելու ստուգում<br>
+                    - Ցիկլով տպիր թվերը 1-ից 10
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="month">
+        <div class="month-header" onclick="toggleWeeks(this)">🗓️ Ամիս 2 — Տվյալների կառուցվածքներ</div>
+        <div class="weeks">
+            <div class="week">
+                <h4>Շաբաթ 5–6</h4>
+                <div class="lesson">🎥 Դասեր՝ Ֆունկցիաներ, List և Tuple</div>
+                <div class="task">📝 Առաջադրանքներ՝<br>
+                    - Ֆունկցիա՝ երկու թվի գումար<br>
+                    - Ցուցակ՝ սիրելի ֆիլմերով
+                </div>
+            </div>
+            <div class="week">
+                <h4>Շաբաթ 7–8</h4>
+                <div class="lesson">🎥 Դասեր՝ Dictionary, Մոդուլներ</div>
+                <div class="task">📝 Առաջադրանքներ՝<br>
+                    - Բառարան՝ անուն, տարիք, քաղաք<br>
+                    - Օգտագործիր random մոդուլը
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="month">
+        <div class="month-header" onclick="toggleWeeks(this)">🚀 Ամիս 3 — Նախագծեր</div>
+        <div class="weeks">
+            <div class="week">
+                <h4>Շաբաթ 9–10</h4>
+                <div class="lesson">🎥 Դասեր՝ Օբյեկտ-կենտրոն ծրագրավորում</div>
+                <div class="task">📝 Առաջադրանքներ՝<br>
+                    - BMI հաշվիչ<br>
+                    - Պարզ հաշվիչ՝ գումարում, հանում, բազմապատկում
+                </div>
+            </div>
+            <div class="week">
+                <h4>Շաբաթ 11–12</h4>
+                <div class="lesson">🎯 Նախագիծ՝ «Գուշակիր թիվը» խաղ</div>
+                <div class="task">📝 Օգտագործիր՝ input, random, while<br>
+                    - Տպիր արդյունքը՝ հաղթանակ կամ պարտություն
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleWeeks(header) {
+            const weeks = header.nextElementSibling;
+            weeks.style.display = weeks.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+'''
+
+with open("/mnt/data/python_learning_plan_arm.html", "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print("Ինտերակտիվ էջը հաջողությամբ ստեղծվել է։")
