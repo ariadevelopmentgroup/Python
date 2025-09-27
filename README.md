@@ -43,7 +43,7 @@ pyinstaller --onefile --icon=logo.ico main.py
 
 ### ✅ Քայլ 4
 
- **``--windowed``** **կամ** **``--noconsole``** - **թաքցնում է կոնսոլը**
+ **``--windowed``** **կամ** **``--noconsole``** - **թաքցնում է կոնսոլը:**
 
 ```Bash
 pyinstaller --onefile --windowed main.py
