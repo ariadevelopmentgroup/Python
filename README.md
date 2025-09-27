@@ -24,7 +24,7 @@ pip install pyinstaller
 ***Սա կփոխի ընթացիկ դիրքը CMD-ում դեպի այդ թղթապանակը։***
 
 ```Bash
-cd C:\Users\Desktop\Figma to Python
+cd C:\Users\Desktop\Figma2Python
 ```
 ----
 
@@ -37,7 +37,7 @@ cd C:\Users\Desktop\Figma to Python
 **``main.py``** - **փոխարինիր քո հավելվածի հիմնական ֆայլով:**
 
 ```Bash
-pyinstaller --onefile main.py
+pyinstaller --onefile --windowed main.py
 ```
 ----
 
@@ -47,19 +47,10 @@ pyinstaller --onefile main.py
 
 **``logo.ico``** - **պետք է լինի նույն թղթապանակում։**
 
-```Bash
-pyinstaller --onefile --icon=logo.ico main.py
-```
-----
-
-## ❌ Եթե չես ուզում բացվող սև կոնսոլային պատուհան (GUI հավելվածների համար)
-
-### ✅ Քայլ 5
-
- **``--windowed``** **կամ** **``--noconsole``** - **թաքցնում է կոնսոլը:**
+**``--windowed``** **կամ** **``--noconsole``** - **թաքցնում է կոնսոլը:**
 
 ```Bash
-pyinstaller --onefile --windowed main.py
+pyinstaller --onefile --windowed --icon=logo.ico main.py
 ```
 ----
 
